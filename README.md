@@ -27,7 +27,7 @@ To run the Coding Profile Visualizer locally, follow these steps:
    cd coding-profile-visualizer
    ```
 
-# Install Dependencies
+## Install Dependencies
 
 Make sure you have Node.js and npm installed. Then, run:
 
@@ -41,17 +41,17 @@ Start the development server with:
 
 bash
 
-## npm start
+ npm start
 
-## This will open the application in your default browser at http://localhost:3000.
+ This will open the application in your default browser at http://localhost:3000.
 
-## Open the Application: Navigate to the hosted URL or your local development server.
+ Open the Application: Navigate to the hosted URL or your local development server.
 
-## Enter Profile Information: Input the profile information for platforms like LeetCode or Codeforces.
+ Enter Profile Information: Input the profile information for platforms like LeetCode or Codeforces.
 
-## Analyze and Compare: Use the provided tools to view and compare coding statistics.
+ Analyze and Compare: Use the provided tools to view and compare coding statistics.
 
-# Contributing
+ Contributing
 
 <p>We welcome contributions to improve the Coding Profile Visualizer. If you'd like to contribute, please follow these guidelines: </p>
 
@@ -66,10 +66,10 @@ License
 
 This project is licensed under the <a href="https://opensource.org/license/mit"> MIT License</a>.
 
-# Acknowledgments
+## Acknowledgments
 
-## React.js: For building the user interface.
+<b> React.js: For building the user interface.</b>
 
-## Tailwind CSS: For styling and responsive design.
+<b> Tailwind CSS: For styling and responsive design.</b>
 
-## Coding Platforms: LeetCode, Codeforces, and others for providing APIs and data.
+<b> Coding Platforms: LeetCode, Codeforces, and others for providing APIs and data.</b>
