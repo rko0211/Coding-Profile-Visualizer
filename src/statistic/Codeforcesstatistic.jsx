@@ -53,7 +53,7 @@ function Codeforcesstatistic({ data, uname }) {
 
   totalAcsubmission = mySet.size;
   const contests1 = [
-    { contestName: "Name", rank: data[0].result[0].firstName + " " + data[0].result[0].lastName },
+    { contestName: "Name", rank: (data[0].result[0].firstName !== undefined && data[0].result[0].lastName !== undefined) ? data[0].result[0].firstName + " " + data[0].result[0].lastName : "-" },
     { contestName: "Country", rank: data[0].result[0].country },
     { contestName: "Total ACSubmission", rank: totalAcsubmission },
     { contestName: "Total Submission", rank: data[2].result.length },
