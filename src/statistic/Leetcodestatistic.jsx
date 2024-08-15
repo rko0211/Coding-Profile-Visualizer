@@ -20,15 +20,19 @@ function Leetcodestatistic({ data, uname }) {
 
   let bestrank = 1000000000;
   let worstrank = -1;
+  let maxrating = -1;
   for (let i = 0; i < data[1].contestParticipation.length; i++) {
     if (data[1].contestParticipation[i].ranking > 0)
       bestrank = Math.min(bestrank, data[1].contestParticipation[i].ranking);
     if (data[1].contestParticipation[i].ranking > 0)
       worstrank = Math.max(worstrank, data[1].contestParticipation[i].ranking);
+
+    maxrating = Math.max(maxrating, Math.round(data[1].contestParticipation[i].rating));
   }
   const contests2 = [
     { contestName: "Global Rank", rank: data[0].ranking },
     { contestName: "Contest Rating", rank: Math.round(data[1].contestRating) },
+    { contestName: "Maximum Contest Rating", rank: maxrating },
     {
       contestName: "Contest Badge", rank: (data[1].contestBadges && data[1].contestBadges.name) ? data[1].contestBadges.name : "None"
     },

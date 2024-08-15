@@ -83,6 +83,7 @@ function Codeforcesstatistic({ data, uname }) {
   }
   const contests2 = [
     { contestName: "Rank", rank: data[0].result[0].rank },
+    { contestName: "Current Rating", rank: data[0].result[0].rating },
     { contestName: "Maximum Rating", rank: data[0].result[0].maxRating },
     { contestName: "Number of Contest", rank: data[1].result.length },
 
