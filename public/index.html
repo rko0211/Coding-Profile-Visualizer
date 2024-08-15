@@ -3,44 +3,42 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="Coding Profile Visualizer helps you view and compare coding profiles from multiple platforms. Analyze ratings, problems solved, and other stats across coding platforms like LeetCode, Codeforces, and more." />
+  <meta name="keywords"
+    content="coding profiles, code profiles, coding statistics, LeetCode, Codeforces, competitive programming, coding ratings, developer profiles" />
+  <meta name="author" content="Your Name or Company Name" />
+  <meta name="robots" content="index, follow, noarchive" />
+
+  <!-- Favicon and Icons -->
+  <link rel="icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
+
   <!-- Title for the website -->
   <title>Coding Profile Visualizer - Analyze and Compare Coding Profiles</title>
-
-  <!-- Description for search engines -->
-  <meta name="description"
-    content="Coding Profile Visualizer helps you view and compare coding profiles from multiple platforms. Analyze ratings, problems solved, and other stats across coding platforms like LeetCode, Codeforces, and more." />
-
-  <!-- Keywords for search engines -->
-  <meta name="keywords"
-    content="coding profiles, code profiles, coding statistics, LeetCode, Codeforces, competitive programming, coding ratings, developer profiles" />
-
-  <!-- Author of the website -->
-  <meta name="author" content="Your Name or Company Name" />
-
-  <!-- Robots Meta Tag -->
-  <meta name="robots" content="index, follow" />
 
   <!-- Open Graph meta tags for better social media sharing -->
   <meta property="og:title" content="Coding Profile Visualizer" />
   <meta property="og:description"
     content="Analyze and compare coding profiles from multiple platforms. See ratings, problems solved, and more." />
-  <meta property="og:image" content="https://www.yourwebsite.com/og-image.png" />
-  <meta property="og:url" content="https://www.yourwebsite.com" />
+  <meta property="og:image" content="https://coding-profile-visualizer.vercel.app/og-image.png" />
+  <meta property="og:url" content="https://coding-profile-visualizer.vercel.app/" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Coding Profile Visualizer" />
+  <meta property="og:locale" content="en_US" />
 
   <!-- Twitter Card meta tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Coding Profile Visualizer" />
   <meta name="twitter:description"
     content="Analyze and compare coding profiles from multiple platforms. See ratings, problems solved, and more." />
-  <meta name="twitter:image" content="https://www.yourwebsite.com/twitter-card-image.png" />
+  <meta name="twitter:image" content="https://coding-profile-visualizer.vercel.app/twitter-card-image.png" />
+  <meta name="twitter:site" content="@yourtwitterhandle" />
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -48,27 +46,63 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Coding Profile Visualizer",
-    "url": "https://www.yourwebsite.com",
+    "url": "https://coding-profile-visualizer.vercel.app/",
     "description": "Analyze and compare coding profiles from multiple platforms. See ratings, problems solved, and more.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Your Organization Name",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://coding-profile-visualizer.vercel.app/logo.png",
+        "width": 500,
+        "height": 500,
+        "description": "Logo of Coding Profile Visualizer"
+      }
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Your Name"
+    },
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://www.yourwebsite.com/search?q={search_term_string}",
+      "target": "https://coding-profile-visualizer.vercel.app/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }
   </script>
 
-  <!-- Alternate Link if applicable -->
-  <!-- <link rel="alternate" href="https://www.yourwebsite.com/fr" hreflang="fr" /> -->
+  <!-- Canonical Link -->
+  <link rel="canonical" href="https://coding-profile-visualizer.vercel.app/" />
 
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <link rel="canonical" href="https://www.yourwebsite.com" />
+  <!-- Preconnect to important origins -->
+  <link rel="preconnect" href="https://coding-profile-visualizer.vercel.app">
+  <link rel="preconnect" href="https://images.coding-profile-visualizer.vercel.app">
+  <link rel="dns-prefetch" href="https://images.coding-profile-visualizer.vercel.app">
+
+  <!-- Preload critical resources (if any) -->
+  <link rel="preload" href="/path/to/critical-resource.css" as="style">
+  <link rel="preload" href="/path/to/critical-resource.js" as="script">
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <!-- Fallback content for users with JavaScript disabled -->
+  <noscript>
+    <style>
+      .no-js {
+        display: block;
+      }
+    </style>
+    <div class="no-js">
+      You need to enable JavaScript to run this app.
+    </div>
+  </noscript>
+
+  <!-- Main application root -->
   <div id="root"></div>
+
+  <!-- Include your main JavaScript file -->
+  <script src="/path/to/index.js" defer></script>
+
 </body>
 
 </html>
