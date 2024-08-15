@@ -27,7 +27,7 @@ To run the Coding Profile Visualizer locally, follow these steps:
    cd coding-profile-visualizer
    ```
 
-# Install Dependencies
+## Install Dependencies
 
 Make sure you have Node.js and npm installed. Then, run:
 
@@ -66,7 +66,7 @@ License
 
 This project is licensed under the <a href="https://opensource.org/license/mit"> MIT License</a>.
 
-# Acknowledgments
+## Acknowledgments
 
 <b> React.js: For building the user interface.</b>
 
