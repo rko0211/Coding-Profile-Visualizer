@@ -28,9 +28,19 @@ const LeetcodeRatingGraph = ({ data1, uname }) => {
         label: 'LeetCode Rating',
         data: ratings,
         fill: false,
-        backgroundColor: 'rgba(75,192,192,0.4)',
-        borderColor: 'rgba(75,192,192,1)',
-        tension: 0.1,
+        borderColor: 'rgba(75, 192, 192, 1)', // Vibrant teal for the line
+        backgroundColor: 'rgba(153, 102, 255, 0.2)', // Soft purple for the fill below the line
+        pointBorderColor: 'rgba(255, 206, 86, 1)', // Bright yellow for the point border
+        pointBackgroundColor: '#FF6384', // Vivid coral for the point fill
+        pointHoverRadius: 7, // Slightly larger hover radius for emphasis
+        pointHoverBackgroundColor: '#FF6384', // Coral for the point background on hover
+        pointHoverBorderColor: 'rgba(54, 162, 235, 1)', // Deep blue for the point border on hover
+
+        tension: 0.2,
+
+        pointRadius: 4,
+        pointHitRadius: 10,
+
       },
     ],
   };
