@@ -1,0 +1,16 @@
+/* Custom CSS for small screens */
+@media (max-width: 480px) {
+  .chart-container {
+    padding-bottom: 40px;
+    /* Ensure enough space for the legend */
+  }
+
+  .chartjs-legend {
+    font-size: 10px;
+    /* Reduce font size for small screens */
+    max-height: 100px;
+    /* Add a maximum height to ensure the legend is scrollable */
+    overflow-y: auto;
+    /* Add scroll if needed */
+  }
+}

@@ -1,0 +1,21 @@
+.hover-underline-animation::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  color: rgb(79, 231, 245);
+}
+
+.hover-underline-animation:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+.active {
+  color: red;
+}
